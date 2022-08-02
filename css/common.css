@@ -1,0 +1,118 @@
+@charset "utf-8";
+.inner { max-width:1140px; margin:0 auto}
+body{
+    padding-top: 104px;
+}
+#header{
+    background: #eef5fc;
+    position: fixed;
+    height: 104px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+#header .inner{
+    position: relative;
+}
+#header .inner h1{
+    width: 184px;
+    padding: 32px 0;
+    float: left;
+}
+#header .membership{
+    font-size: 12px;
+    color: #374785;
+    position: absolute;
+    top: 5px;
+    right: 22px;
+}
+#header .membership a{
+    padding: 0 5px;
+}
+#nav { float:right;
+    margin-top: 32px;
+}
+#nav .depth1 > li { float:left; position:relative }
+#nav .depth1 > li > a { font-size:16px; 
+    color:#374785;
+    padding:8px 27px; 
+}
+#nav .depth1 > li > a::after {
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900 !important;
+    margin-left:10px; 
+}
+#nav .depth1 > li:hover > a::after {
+    content:'\f106';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900 !important;
+    margin-left:10px; 
+}
+#nav .depth1 > li:first-child > a::after,
+#nav .depth1 > li:last-child > a::after
+{
+    display:none; 
+}
+#nav .depth2 {
+    position:absolute;
+    top:100%;
+    left:0; 
+    width:160px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.1);
+    padding:8px 0;
+    display:none;
+}
+#nav .depth1 > li:hover .depth2 {
+    display:block; 
+}
+
+#nav .depth2 li a {
+    font-size:14px; padding:8px 16px;
+    color:#9a9aa0; display:block;
+}
+#nav .depth2 li:hover a {
+    color:#374785;
+    background:#e7e7f9;
+}
+#footer{
+    padding: 75px 0;
+    background: #282866;
+}
+#footer .inner{
+    text-align: center;
+}
+#footer .inner .sns{
+    margin-bottom: 50px;
+}
+#footer .inner .sns ul li{
+    display: inline-block;
+}
+#footer .inner .sns ul li i{
+    margin-right: 45px;
+    color: #282866;
+    position: relative;
+    font-size: 30px;
+    width: 66px;
+    height: 66px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 66px;
+}
+#footer .inner .sns ul li:last-child i{
+    margin-right: 0;
+}
+
+#footer .inner .contact p{
+    display: inline-block;
+    color: #e3e3e3;
+    font-size: 16px;
+    margin-right: 30px;
+}
+#footer .inner .contact p:last-child{
+    margin-right: 0;
+}
